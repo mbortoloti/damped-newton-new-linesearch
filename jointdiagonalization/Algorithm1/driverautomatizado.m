@@ -1,4 +1,4 @@
-'%
+%
 %  Driver program for Joint Diagonalization
 %  Newton Method
 
