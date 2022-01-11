@@ -74,7 +74,7 @@ for k = 1:size(dim_n,2)
 %   
 %   fileecho(iecho,smname,etask);
   for kk = 1:size(rho,2)
-  for i = 1:nG  % Loop for initial guess test
+  for i = 1:nG  % Loop for initial guess tests
     %
     % Matrix A Reading Procedure
     %
