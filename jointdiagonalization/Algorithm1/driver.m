@@ -3,14 +3,14 @@ clear all;
 %  Driver for Algorithm 1 
 %  Joint Diagonalization
 %
-N = 5;
-n = 20;
-p = 5;
+N = 10;
+n = 30;
+p = 10;
 
 %Echo task 
 % etask = 0 --> do not print echo info
 % etask = 1 --> print echo info   
-etask = 1;
+etask = 0;
 
 P = qf(randn(n,n));
 
@@ -33,7 +33,7 @@ options.maxiter = 10000;
 options.tol = 1.e-12;
 options.sttol = 1.e-12;
 options.sigma = 1.e-3;
-options.theta = 1/options.sigma;
+options.theta = 1e-3;
 options.alphatol = 1.e-2;
 options.iecho = fopen("echo.dat","w");   %Echo file
 options.etask = etask;
