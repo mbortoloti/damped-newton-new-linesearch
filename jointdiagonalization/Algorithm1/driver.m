@@ -1,11 +1,16 @@
 clear all;
 %
-%  Driver for Newton 
+%  Driver for Algorithm 1 
 %  Joint Diagonalization
 %
-N = 10;
+N = 5;
 n = 20;
-p = 10;
+p = 5;
+
+%Echo task 
+% etask = 0 --> do not print echo info
+% etask = 1 --> print echo info   
+etask = 1;
 
 P = qf(randn(n,n));
 
@@ -15,7 +20,6 @@ MA = P*ML*P';
 for l = 2:N
   d = sort(rand(n,1),'descend');
   MA = [MA,P*diag(d)*P'];
-%   ML = [ML,diag(d)];
 end
 
 % Exact solution
@@ -31,4 +35,6 @@ options.sttol = 1.e-12;
 options.sigma = 1.e-3;
 options.theta = 1/options.sigma;
 options.alphatol = 1.e-2;
+options.iecho = fopen("echo.dat","w");   %Echo file
+options.etask = etask;
 [Y,info] = newalg(Y0,MA,N,n,p,options);
