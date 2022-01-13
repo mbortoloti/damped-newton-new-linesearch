@@ -5,13 +5,13 @@
 clear all;
 clc;
 
-nig = 15; % Number of Initial Guesses
+nig = 1; % Number of Initial Guesses
 
 options.maxiter = 5000;
 options.ngtol = 1.0e-6;
 
 % Dimension definition
-dim = [100,200,300,400,500];
+dim = [100];
 
 itime = fopen("nlstime.dat","w");
 ieft  = fopen("nlsift.dat","w");
