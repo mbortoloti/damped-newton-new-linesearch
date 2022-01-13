@@ -3,9 +3,14 @@ clear all;
 %  Driver for Newton 
 %  Joint Diagonalization
 %
-N = 3;
-n = 50;
+N = 10;
+n = 30;
 p = 10;
+
+%Echo task 
+% etask = 0 --> do not print echo info
+% etask = 1 --> print echo info   
+etask = 0;
 
 P = qf(randn(n,n));
 
@@ -25,8 +30,10 @@ Yex = P*eye(n,p);
 rho = 10;
 Y0 = qf(Yex+rho*rand(n,p));
 
-options.maxiter = 1000;
+options.maxiter = 10000;
 options.tol = 1.e-12;
 options.sttol = 1.e-15;
 options.sigma = 1.e-3;
+options.etask = etask;
+options.iecho = fopen("echo.dat","w");   %Echo file
 [Y,info] = damped(Y0,MA,N,n,p,options);
