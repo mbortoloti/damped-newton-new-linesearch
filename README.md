@@ -14,4 +14,5 @@
  References
 
  [1] Proposed paper
+ 
  [1] M.A.A. Bortoloti, T.A. Fernandes, O.P. Ferreira, An efficient damped Newton-type algorithm with globalization strategy on Riemannian manifolds, Journal of Computational and Applied Mathematics, Volume 403, 2022.
