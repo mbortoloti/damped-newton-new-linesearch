@@ -4,13 +4,13 @@
 
 
  Algorithm 1: Damped Newton with a new linesearch
+
  Algorithm 3: Damped Newton method presented in [2]
 
+Both codes are started from Matlab file "driver.m".
 
 
-
-
-
+=====
  ## References
 
  [1] Proposed paper
