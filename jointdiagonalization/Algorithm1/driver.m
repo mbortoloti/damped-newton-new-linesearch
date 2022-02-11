@@ -12,8 +12,10 @@ p = 10;
 % etask = 1 --> print echo info   
 etask = 0;
 
-P = qf(randn(n,n));
 
+
+% Setting MA matrices. Note that MA = [A_1 A_2 ... A_N]
+P = qf(randn(n,n));
 d = sort(rand(n,1),'descend');
 ML = diag(d);
 MA = P*ML*P';
@@ -22,19 +24,21 @@ for l = 2:N
   MA = [MA,P*diag(d)*P'];
 end
 
-% Exact solution
+% Exact solution for numerical tests
 Yex = P*eye(n,p);
 
 % Initial guess
 rho = 0.1;
 Y0 = qf(Yex+rho*rand(n,p));
 
-options.maxiter = 10000;
-options.tol = 1.e-12;
-options.sttol = 1.e-12;
-options.sigma = 1.e-3;
-options.theta = 1e-3;
-options.alphatol = 1.e-2;
-options.iecho = fopen("echo.dat","w");   %Echo file
-options.etask = etask;
+
+% Parameters for code
+options.maxiter = 10000;                      % Maximum number of iterations
+options.tol = 1.e-12;                         % Tolerance for gradient norm of the function f
+options.sttol = 1.e-12;                       % Tolerance for tangent space test of Newton's equation solution  
+options.sigma = 1.e-3;                        % Parameter for Armijo linesearch
+options.theta = 1e-3;                         % Parameter for new linesearch
+options.alphatol = 1.e-2;                     % Tolerance for alpha choice
+options.iecho = fopen("echo.dat","w");        % Echo file
+options.etask = etask;                        % Echo file print option
 [Y,info] = newalg(Y0,MA,N,n,p,options);
