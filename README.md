@@ -13,6 +13,6 @@ Both codes can be started from Matlab file "driver.m" in each folder problem (jo
 
  ## References
 
- [1] M.A.A. Bortoloti, T.A. Fernandes, title????
+ [1] M.A.A. Bortoloti, T.A. Fernandes, A modified Armijo for damping a Riemannian Newton-type method
 
  [2] M.A.A. Bortoloti, T.A. Fernandes, O.P. Ferreira, An efficient damped Newton-type algorithm with globalization strategy on Riemannian manifolds, Journal of Computational and Applied Mathematics, Volume 403, 2022.
