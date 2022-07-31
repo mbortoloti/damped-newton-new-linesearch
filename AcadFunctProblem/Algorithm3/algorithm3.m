@@ -76,7 +76,7 @@ function [P,sol] = algorithm3(P,options,theta)
           if sqrt(metric(V-V',V-V',P)) <= eps2
             dir = 'new';
             if(snewtontest2(V,gphip,P,metric,theta) == 0)
-                dir = 'gr2';
+                dir = 'grd';
                 V=-gphip;
             end
           else

@@ -1,5 +1,7 @@
 %
-%   On the globalization of Riemannian Newton method
+%   An efficient damped Newton-type algorithm with
+%   globalization strategy on Riemannian manifolds
+%
 %   by Bortoloti, M. A. A., Fernandes, T. A. and Ferreira, O. P.
 %
 %   Algorithm 3 developed to solve an academic problem on the 
@@ -21,10 +23,10 @@ ieval = fopen("feval.dat","w");
 %
 % Static random numbers (only for tests)
 %
-rng(1234,'twister');
+rng(12345,'twister');
 
 % Dimension definition 
-dimensions = [5,10,20];
+dimensions = [100];
 
 % Number of initial guesses for each dimension
 nig = 10;
@@ -34,7 +36,7 @@ n = dimensions(nn);
 fprintf("n = %5d\n",n);
 
 % linesearch parameter setting
-theta = 0.1;
+theta = 0.99999;
 
 % Definition of Retraction 
 %
@@ -45,7 +47,7 @@ theta = 0.1;
 % typeretra == 2 Analogous Exponential map
 % typeretra == 3 Second order approximarion for exponential map
 % typeretra == 4 First order approximarion for exponential map
-typeretra = 1;
+typeretra = 4;
 
 for q = 1 : nig
 
@@ -55,13 +57,13 @@ P = rand(n,n);
 P = 0.5 * (P + P') + n * eye(n);
 
 
-options.maxiter = 1000;
+options.maxiter = 5000;
 options.stpmin = 1.e-10;
 options.ngtol = 1.0e-6;
-options.eps2 = 1.0e-13;
+options.eps2 = 1.0e-16;
  
  
-options.a = 10;
+options.a = 1;
 options.b = 1;
 
         
@@ -98,7 +100,7 @@ options.metric = metric;
 if info.error > 0
     fprintf(itime,"%20s\n","INF");
     fprintf(iiter,"%10s\n","INF");
-    fprintf(ieval,"%10d\n","INF");
+    fprintf(ieval,"%10s\n","INF");
 else
     fprintf(itime,"%20.15e\n",info.time);
     fprintf(iiter,"%10d\n",info.iter);
