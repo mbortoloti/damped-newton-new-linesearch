@@ -1,4 +1,4 @@
-function [sol] = algorithm3(P,options,theta)
+function [P,sol] = algorithm3(P,options,theta)
     %
     %     Input description
     %
@@ -6,6 +6,7 @@ function [sol] = algorithm3(P,options,theta)
     %     options.ngtol   ::: gradient norm tolerance
     %     options. eps2   ::: tolerance for verification if solution
     %                         of Newton equation belongs to tangent space
+    %     options.stpmin  ::: minimun step lenght
     %     options.a       ::: constant a on f_1 definition
     %     options.b       ::: constant b on f_1 definition
     %     options.rgradf  ::: Riemannian gradient of f_1 definition
@@ -20,6 +21,10 @@ function [sol] = algorithm3(P,options,theta)
     ret = options.ret;
     rgradf = options.rgradf;
     metric = options.metric;
+    stpmin = options.stpmin;
+    
+    % Evaluate number of the meriti function 
+    evalf = 0;
     
     sigma = 1.0e-3;
     a = options.a;
@@ -45,10 +50,13 @@ function [sol] = algorithm3(P,options,theta)
         rgradfp = rgradf(P);
         ng = sqrt(metric(rgradfp,rgradfp,P));
         fprintf(' %5d  %23.12e %+18.12e %8s\n',k,ng,alpha,dir);
-        if ng <= ngtol
+        if ng < ngtol
             sol.time = toc;
-            fprintf('\n ::: Gradient norm tolerance achieved\n');
-            fprintf(' ::: Elapsed time  %12.8f\n',sol.time);
+            sol.iter = k;
+            sol.evalf = evalf;
+%             fprintf('\n ::: Gradient norm tolerance achieved\n');
+%             fprintf(' ::: Elapsed time  %12.8f\n',sol.time);
+%             fprintf(' ::: Elaluated function number  %5d\n',sol.evalf);
             break;
         end
         k = k +1;
@@ -80,28 +88,38 @@ function [sol] = algorithm3(P,options,theta)
         end
         
         % Armijo line search 
-        alpha = armijo(P,V,gphip,sigma);
+        %alpha = armijo(P,V,gphip,sigma);
+        [alpha,LSerror,evalf] = armijo(P,V,gphip,sigma,stpmin,evalf);
+        if LSerror > 0
+            sol.error = 3;
+        end
         
         % Iterate updating by exponential map
         P = ret(P,alpha*V);
     end
-    if k<= maxiter
-        sol.P = P;
-    else
+    if k > maxiter
         sol.error = 1;
     end
     
     % Linesearch definition (Armijo type)
-    function alpha = armijo(P,V,gphip,sigma)
+    function [alpha,error,evalf] = armijo(P,V,gphip,sigma,stpmin,evalf)
+        error = 0;
         alpha = 1;
-        phip = phi(P);
+%         phip = phi(P);
+        [phip,evalf] = fevaluate(evalf,phi,P);
+        GV = sigma * metric(gphip,V,P);
         while true
-            phiq = phi(ret(P,alpha*V));
-            arm = phiq - phip - alpha*sigma*metric(gphip,V,P);
-            if arm <= 0
-                break;
+            %phiq = phi(ret(P,alpha*V));
+            [phiq,evalf] = fevaluate(evalf,phi,ret(P,alpha*V));
+            arm = phiq - phip - alpha * GV;
+            if arm > 0
+                alpha = alpha * 0.5;
+                if alpha < stpmin
+                    error = 1;
+                    break;
+                end
             else
-                alpha = 0.5*alpha;
+                break;
             end
         end
     end

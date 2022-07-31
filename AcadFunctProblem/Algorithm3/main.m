@@ -10,10 +10,30 @@
 clear all;
 clc;
 
-% Dimension definition 
-n = 5;
+%
+% Files for performance analysis
+%
+itime = fopen("time.dat","w");
+iiter = fopen("iterates.dat","w");
+ieval = fopen("feval.dat","w");
 
-% parameter definition
+
+%
+% Static random numbers (only for tests)
+%
+rng(1234,'twister');
+
+% Dimension definition 
+dimensions = [5,10,20];
+
+% Number of initial guesses for each dimension
+nig = 10;
+
+for nn = 1 :  size(dimensions,2)
+n = dimensions(nn);
+fprintf("n = %5d\n",n);
+
+% linesearch parameter setting
 theta = 0.1;
 
 % Definition of Retraction 
@@ -27,16 +47,21 @@ theta = 0.1;
 % typeretra == 4 First order approximarion for exponential map
 typeretra = 1;
 
+for q = 1 : nig
 
 % Initial guess definition
-P = full(sprandsym(n,0.7,0.1,1));
+%P = full(sprandsym(n,0.7,0.1,1));
+P = rand(n,n);
+P = 0.5 * (P + P') + n * eye(n);
+
 
 options.maxiter = 1000;
+options.stpmin = 1.e-10;
 options.ngtol = 1.0e-6;
 options.eps2 = 1.0e-13;
  
  
-options.a = 1;
+options.a = 10;
 options.b = 1;
 
         
@@ -68,9 +93,31 @@ metric = @(U,V,P) trace(V*P^(-1)*U*P^(-1));
 options.metric = metric;
  
 % Solver call 
-[info] = algorithm3(P,options,theta);
+[P,info] = algorithm3(P,options,theta);
 
+if info.error > 0
+    fprintf(itime,"%20s\n","INF");
+    fprintf(iiter,"%10s\n","INF");
+    fprintf(ieval,"%10d\n","INF");
+else
+    fprintf(itime,"%20.15e\n",info.time);
+    fprintf(iiter,"%10d\n",info.iter);
+    fprintf(ieval,"%10d\n",info.evalf);
+end
 
+% end of initial guess loop
+end
+
+%end of dimensions loop
+end
+
+fclose(itime);
+fclose(iiter);
+fclose(ieval);
+
+%
+% Retractions
+%
 function Y = firstorder(P,V)
     Y = symm(P+V);
 end
