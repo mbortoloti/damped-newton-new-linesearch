@@ -26,7 +26,7 @@ ieval = fopen("feval.dat","w");
 rng(12345,'twister');
 
 % Dimension definition 
-dimensions = [100];
+dimensions = [100,200,300,400,500];
 
 % Number of initial guesses for each dimension
 nig = 10;
@@ -47,7 +47,7 @@ theta = 0.99999;
 % typeretra == 2 Analogous Exponential map
 % typeretra == 3 Second order approximarion for exponential map
 % typeretra == 4 First order approximarion for exponential map
-typeretra = 4;
+typeretra = 1;
 
 for q = 1 : nig
 

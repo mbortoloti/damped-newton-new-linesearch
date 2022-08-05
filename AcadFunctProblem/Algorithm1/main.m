@@ -57,7 +57,7 @@ P = rand(n,n);
 P = 0.5 * (P + P') + n * eye(n);
 
 
-options.maxiter = 100;
+options.maxiter =5000;
 options.stpmin = 1.e-10;
 options.ngtol = 1.0e-6;
 options.eps2 = 1.0e-16;
