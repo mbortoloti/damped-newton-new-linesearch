@@ -1,5 +1,5 @@
 %
-%   logdet problem
+%   logdet problem TrustRegions
 %
 
 
@@ -12,7 +12,7 @@ clc;
 %
 % Files for performance analysis
 %
-itime = fopen("logdettimeBFGS.dat","w");
+itime = fopen("logdettimeTR.dat","w");
 % iiter = fopen("logdetiterates.dat","w");
 % ieval = fopen("logdetfeval.dat","w");
 
@@ -24,7 +24,7 @@ rng(12345,'twister');
 
 % Dimension definition 
 dimensions = [100,200,300,400,500];
-% dimensions = [5];
+%   dimensions = [100];
 % Number of initial guesses for each dimension
 nig = 10;
 
@@ -47,6 +47,7 @@ problem.cost = f;
 
 problem.egrad = @(X)(a * X^-1 - b * X^-2);
 
+problem.ehess = @(X,V) (b*(X^-1 * V * X^-2 + X^-2 * V * X^-1)-a*X^-1 * V * X^-1);
 % checkgradient(problem);
 
 for q = 1 : nig
@@ -57,14 +58,14 @@ P0 = rand(n,n);
 P0 = 0.5 * (P0 + P0') + n * eye(n);
 
 
- options.maxiter =5000;
+ options.maxiter =1000;
  options.minstep = 1.e-10;
  options.tolgradnorm = 1.0e-6;
 
  
 % Solver call 
 %[P,info] = algorithm1(P,options,theta);
-[P,cost,info,~] = rlbfgs(problem,P0,options);
+[P,cost,info,~] = trustregions(problem,P0,options);
  iterations = [info.iter]; 
  etime = [info.time];
  if iterations(end) >= options.maxiter
