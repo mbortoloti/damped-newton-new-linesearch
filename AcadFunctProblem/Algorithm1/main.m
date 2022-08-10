@@ -36,7 +36,7 @@ n = dimensions(nn);
 fprintf("n = %5d\n",n);
 
 % linesearch parameter setting
-theta = 0.9999;
+theta = 0.9;
 
 % Definition of Retraction 
 %
@@ -63,8 +63,8 @@ options.ngtol = 1.0e-6;
 options.eps2 = 1.0e-16;
  
  
-options.a = 1;
-options.b = 1;
+options.a = 1.0;
+options.b = 1.0;
 
         
 I = eye(n);
