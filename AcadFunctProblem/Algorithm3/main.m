@@ -26,8 +26,8 @@ ieval = fopen("feval.dat","w");
 rng(12345,'twister');
 
 % Dimension definition 
-dimensions = [100,200,300,400,500];
-
+ dimensions = [100,200,300,400,500];
+% dimensions=[100];
 % Number of initial guesses for each dimension
 nig = 10;
 
@@ -36,7 +36,7 @@ n = dimensions(nn);
 fprintf("n = %5d\n",n);
 
 % linesearch parameter setting
-theta = 0.99999;
+theta = 0.9999;
 
 % Definition of Retraction 
 %
@@ -47,7 +47,7 @@ theta = 0.99999;
 % typeretra == 2 Analogous Exponential map
 % typeretra == 3 Second order approximarion for exponential map
 % typeretra == 4 First order approximarion for exponential map
-typeretra = 1;
+typeretra = 3;
 
 for q = 1 : nig
 
@@ -63,8 +63,8 @@ options.ngtol = 1.0e-6;
 options.eps2 = 1.0e-16;
  
  
-options.a = 1;
-options.b = 1;
+options.a = 5.0;
+options.b = 1.0;
 
         
 I = eye(n);
