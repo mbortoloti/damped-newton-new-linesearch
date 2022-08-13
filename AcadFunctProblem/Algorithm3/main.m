@@ -102,7 +102,7 @@ if info.error > 0
     fprintf(iiter,"%10s\n","INF");
     fprintf(ieval,"%10s\n","INF");
 else
-    fprintf(itime,"%20.15e\n",info.time);
+    fprintf(itime,"%20.15f\n",info.time);
     fprintf(iiter,"%10d\n",info.iter);
     fprintf(ieval,"%10d\n",info.evalf);
 end
