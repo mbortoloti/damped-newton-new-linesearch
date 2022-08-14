@@ -57,7 +57,7 @@ P0 = rand(n,n);
 P0 = 0.5 * (P0 + P0') + n * eye(n);
 
 
- options.maxiter =5000;
+ options.maxiter =1000;
  options.minstep = 1.e-10;
  options.tolgradnorm = 1.0e-6;
 
@@ -72,7 +72,7 @@ P0 = 0.5 * (P0 + P0') + n * eye(n);
 %     fprintf(iiter,"%10s\n","INF");
 %     fprintf(ieval,"%10s\n","INF");
  else
-     fprintf(itime,"%20.15e\n",etime(end));
+     fprintf(itime,"%20.15f\n",etime(end));
 %     fprintf(iiter,"%10d\n",info.iter);
 %     fprintf(ieval,"%10d\n",info.evalf);
  end
