@@ -73,7 +73,7 @@ P0 = 0.5 * (P0 + P0') + n * eye(n);
 %     fprintf(iiter,"%10s\n","INF");
 %     fprintf(ieval,"%10s\n","INF");
  else
-     fprintf(itime,"%20.15e\n",etime(end));
+     fprintf(itime,"%20.15f\n",etime(end));
 %     fprintf(iiter,"%10d\n",info.iter);
 %     fprintf(ieval,"%10d\n",info.evalf);
  end
