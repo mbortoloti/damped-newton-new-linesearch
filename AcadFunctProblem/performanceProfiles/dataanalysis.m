@@ -14,4 +14,4 @@ h = semilogy(TR.iter,TR.gradnorm,'-or',...
 legend('Trust Region','BFGS','Algorithm 1','Location','Southeast')
 xlabel('Iterate');
 ylabel('|| grad f ||');
-set(h,'LineWidth',2);
+set(h,'LineWidth',2); 
