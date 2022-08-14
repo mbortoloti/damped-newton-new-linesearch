@@ -27,7 +27,7 @@ rng(12345,'twister');
 
 % Dimension definition 
  dimensions = [100,200,300,400,500];
-% dimensions=[100];
+%  dimensions=[100];
 % Number of initial guesses for each dimension
 nig = 10;
 
@@ -57,7 +57,7 @@ P = rand(n,n);
 P = 0.5 * (P + P') + n * eye(n);
 
 
-options.maxiter = 5000;
+options.maxiter = 1000;
 options.stpmin = 1.e-10;
 options.ngtol = 1.0e-6;
 options.eps2 = 1.0e-16;

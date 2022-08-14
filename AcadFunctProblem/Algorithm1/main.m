@@ -15,9 +15,9 @@ clc;
 %
 % Files for performance analysis
 %
-itime = fopen("time.dat","w");
-iiter = fopen("iterates.dat","w");
-ieval = fopen("feval.dat","w");
+itime = fopen("timeXX.dat","w");
+iiter = fopen("iteratesXX.dat","w");
+ieval = fopen("fevalXX.dat","w");
 
 
 %
@@ -27,7 +27,7 @@ rng(12345,'twister');
 
 % Dimension definition 
 dimensions = [100,200,300,400,500];
-
+% dimensions = [100];
 % Number of initial guesses for each dimension
 nig = 10;
 

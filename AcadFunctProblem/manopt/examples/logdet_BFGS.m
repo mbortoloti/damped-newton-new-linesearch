@@ -24,9 +24,9 @@ rng(12345,'twister');
 
 % Dimension definition 
 dimensions = [100,200,300,400,500];
-% dimensions = [5];
+dimensions = [100];
 % Number of initial guesses for each dimension
-nig = 10;
+nig = 1;
 
 for nn = 1 :  size(dimensions,2)
 n = dimensions(nn);
