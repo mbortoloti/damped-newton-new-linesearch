@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.29)  15 AUG 2022 15:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.29)  15 AUG 2022 16:38
 entering extended mode
 **./ROUND_TWO_New_linesearch_26_07_22.tex
 (ROUND_TWO_New_linesearch_26_07_22.tex
@@ -327,13 +327,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <logdetpp.png, id=48, 470.50781pt x 322.95656pt>
 File: logdetpp.png Graphic file (type png)
 <use logdetpp.png>
-Package pdftex.def Info: logdetpp.png  used on input line 413.
+Package pdftex.def Info: logdetpp.png  used on input line 414.
 (pdftex.def)             Requested size: 235.25333pt x 161.47787pt.
-<logdet_iter.png, id=49, 380.92313pt x 308.65312pt>
+<logdet_iter.png, id=49, 470.50781pt x 390.70969pt>
 File: logdet_iter.png Graphic file (type png)
 <use logdet_iter.png>
 Package pdftex.def Info: logdet_iter.png  used on input line 422.
-(pdftex.def)             Requested size: 202.80206pt x 164.32478pt.
+(pdftex.def)             Requested size: 202.80206pt x 168.40729pt.
  [9 <./logdetpp.png (PNG copy)>]
 Underfull \hbox (badness 1331) in paragraph at lines 563--569
 []\OT1/cmr/m/n/8 do Carmo, M.P.: Rie-man-nian ge-om-e-try.  Math-e-mat-ics: The
@@ -378,7 +378,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  3905 strings out of 479321
  56472 string characters out of 2867011
- 367060 words of memory out of 3000000
+ 367061 words of memory out of 3000000
  21329 multiletter control sequences out of 15000+600000
  412598 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -391,19 +391,20 @@ s/cm/cmbx8.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmex10.pf
 b><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/PROGRAM
 FILES/miktex/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/PROGRAMFILES/miktex/f
 onts/type1/public/amsfonts/cm/cmmi7.pfb><D:/PROGRAMFILES/miktex/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/c
-m/cmr5.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/
-PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/PROGRAMFILES/mi
-ktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/PROGRAMFILES/miktex/fonts/ty
-pe1/public/amsfonts/cm/cmsy5.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/ams
-fonts/cm/cmsy7.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmti1
-0.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/PROG
-RAMFILES/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/PROGRAMFILES
-/miktex/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on ROUND_TWO_New_linesearch_26_07_22.pdf (11 pages, 394545 bytes
+lic/amsfonts/cm/cmmi8.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:
+/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/PROGRAMFILES/m
+iktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/PROGRAMFILES/miktex/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/ams
+fonts/cm/cmsy5.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmsy7
+.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/PROG
+RAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/PROGRAMFILES/mikte
+x/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/PROGRAMFILES/miktex/fonts/
+type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on ROUND_TWO_New_linesearch_26_07_22.pdf (11 pages, 408594 bytes
 ).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

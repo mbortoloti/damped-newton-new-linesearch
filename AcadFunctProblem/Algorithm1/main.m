@@ -27,9 +27,9 @@ rng(12345,'twister');
 
 % Dimension definition 
 dimensions = [100,200,300,400,500];
-% dimensions = [100];
+dimensions = [100];
 % Number of initial guesses for each dimension
-nig = 10;
+nig = 1;
 
 for nn = 1 :  size(dimensions,2)
 n = dimensions(nn);
@@ -77,8 +77,8 @@ options.ngtol = 1.0e-6;
 options.eps2 = 1.0e-16;
  
  
-options.a = 5.0;
-options.b = 2.0;
+options.a = 10.0;
+options.b = 1.0;
 
         
 I = eye(n);

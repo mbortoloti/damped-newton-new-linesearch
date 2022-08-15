@@ -405,6 +405,7 @@ In this section we present a performance of Algorithm 1 in the search for critic
 %It can be found that the solution of problem above is given by $P^*=b/a I_n$, where $I_n$ is the $n \times n$ identity matrix.
 
 For numerical study we have considered $a = 5.0$ and $b = 1.0$. It were considered tests for  $n=100,200,300,400,500$, and were taken 10 random initial guesses on $\mathbb{P}^n_{++}$ for each $n$. The parameters of linesearch were chosen as $\sigma = 10^{-3}$ and $\theta = 0.9$.
+
 First, we compare the performance of Algorithm \ref{AL:Newton_NewLinesearch} with BFGS and Trust Region methods. It can be seen in Figure \ref{fig:logdetperformance} that the proposed algorithm have solved all problems faster than the other considered methods.
 
 
@@ -415,12 +416,11 @@ First, we compare the performance of Algorithm \ref{AL:Newton_NewLinesearch} wit
 	\label{fig:logdetperformance}
 \end{figure}
 
-Now, we present the gradient norm of function $f$ against iteration numbers to compare Algorithm \ref{AL:Newton_NewLinesearch} with BFGS and Trust Region methods. We present the result for $n=100$ and one initial guess. see Figure \ref{fig:logdetiter}.
-
+Now, we present the gradient norm of function $f$ against iteration numbers to compare Algorithm \ref{AL:Newton_NewLinesearch} with BFGS and Trust Region methods. It was considered the function $f$ with $a=10.0$ and $b=1.0$ and $n=500$. We take the same  initial guess for the methods. In Figure \ref{fig:logdetiter} it can be seen that the proposed algorithm reached the desired tolerance for the gradient norm with fewer iterations than the Trust Region and BFGS methods.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.6\textwidth]{logdet_iter.png}
-	\caption{Iterates.}
+	\caption{Gradient norm as function of iteration number of Algorithm \ref{AL:Newton_NewLinesearch}, BFGS and Trust Region for Problem \ref{pracad} with $a=10.0$, $b=1.0$ and $n=500$.}
 	\label{fig:logdetiter}
 \end{figure}
 
