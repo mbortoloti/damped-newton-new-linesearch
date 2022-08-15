@@ -399,15 +399,29 @@ In this section we present a performance of Algorithm 1 in the search for critic
 
  To present the problem, we need consider  $ \mathbb{P}^n_{++}$, the manifold of symmetric positive definite matrices of order $n$,
 
-\begin{problem}Find $P^* \in \mathbb{P}^n_{++}$, such that $\grad f(P^*) =0$, where $f:\mathbb{P}^n_{++} \to \mathbb{R}$ is given by  $f(X) = a \log(\det X) + b \trace (X^{-1})$, with $a,b > 0$, $\det P$ is the determinant of $P$,   and $\grad f(P)$ is the riemannian gradient of $f$.
+\begin{problem}\label{pracad} Let $ \mathbb{P}^n_{++}$ be the manifold of symmetric positive definite matrices of order $n$.  Find $P^* \in \mathbb{P}^n_{++}$, such that $\grad f(P^*) =0$, where $f:\mathbb{P}^n_{++} \to \mathbb{R}$ is given by  $f(X) = a \log(\det X) + b \trace (X^{-1})$, with $a,b > 0$, $\det P$ is the determinant of $P$,   and $\grad f(P)$ is the riemannian gradient of $f$.
 \end{problem}
 
+%It can be found that the solution of problem above is given by $P^*=b/a I_n$, where $I_n$ is the $n \times n$ identity matrix.
+
+For numerical study we have considered $a = 5.0$ and $b = 1.0$. It were considered tests for  $n=100,200,300,400,500$, and were taken 10 random initial guesses on $\mathbb{P}^n_{++}$ for each $n$. The parameters of linesearch were chosen as $\sigma = 10^{-3}$ and $\theta = 0.9$.
+First, we compare the performance of Algorithm \ref{AL:Newton_NewLinesearch} with BFGS and Trust Region methods. It can be seen in Figure \ref{fig:logdetperformance} that the proposed algorithm have solved all problems faster than the other considered methods.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{logdetpp.png}
+	\caption{Performance profiles comparing Algorithm 1, Trust Region and BFGS methods for the Problem \ref{pracad} .}
+	\label{fig:logdetperformance}
+\end{figure}
+
+Now, we present the gradient norm of function $f$ against iteration numbers to compare Algorithm \ref{AL:Newton_NewLinesearch} with BFGS and Trust Region methods. We present the result for $n=100$ and one initial guess. see Figure \ref{fig:logdetiter}.
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.6\textwidth]{logdet_iter.png}
 	\caption{Iterates.}
-	\label{fig:logdetfig}
+	\label{fig:logdetiter}
 \end{figure}
 
 

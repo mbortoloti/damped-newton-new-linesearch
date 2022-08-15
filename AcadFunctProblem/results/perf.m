@@ -74,7 +74,7 @@ function [x,y,pf]=perf(varargin)
  end
  
  y = y/npb;
-color = ['r','g','b','c','y','m','k'];
+color = ['c','g','b','r','y','m','k'];
 mark  = ['o','x','*','+'];
 %figure
 % graphics_toolkit('fltk');
