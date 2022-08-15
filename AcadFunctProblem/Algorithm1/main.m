@@ -15,9 +15,9 @@ clc;
 %
 % Files for performance analysis
 %
-itime = fopen("timeXX.dat","w");
-iiter = fopen("iteratesXX.dat","w");
-ieval = fopen("fevalXX.dat","w");
+itime = fopen("timeALGO1.dat","w");
+iiter = fopen("iteratesALGO1.dat","w");
+ieval = fopen("fevalALGO1.dat","w");
 
 
 %
@@ -47,24 +47,38 @@ theta = 0.9;
 % typeretra == 2 Analogous Exponential map
 % typeretra == 3 Second order approximarion for exponential map
 % typeretra == 4 First order approximarion for exponential map
-typeretra = 1;
+typeretra = 4;
 
 for q = 1 : nig
 
 % Initial guess definition
-%P = full(sprandsym(n,0.7,0.1,1));
-P = rand(n,n);
-P = 0.5 * (P + P') + n * eye(n);
+% P = full(sprandsym(n,0.7,0.1,1));
+% P = rand(n,n);
+% P = 0.5 * (P + P') + n * eye(n);
+% 
+%  vp0 = rand(n,1);
+%  P = diag(vp0);
+%  
 
+density = rand(1);
+rc = rand(1);
+P = sprandsym(n,density,rc,1);
+P= full(P);
 
-options.maxiter =5000;
+% P = rand(n,n);
+% [Q,~] = qr(P,0);
+% v = rand(n,1);
+% D = diag(v);
+% P = P * D * P';
+
+options.maxiter =1000;
 options.stpmin = 1.e-10;
 options.ngtol = 1.0e-6;
 options.eps2 = 1.0e-16;
  
  
-options.a = 1.0;
-options.b = 1.0;
+options.a = 5.0;
+options.b = 2.0;
 
         
 I = eye(n);
