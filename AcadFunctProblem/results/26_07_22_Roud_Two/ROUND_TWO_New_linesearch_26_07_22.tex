@@ -395,13 +395,11 @@ In this section, we aim to explore the behaviour of Algorithm \ref{AL:Newton_New
 
 \subsection{An academic function on Symmetric Positive Definite Matrices }
 
-Let $ \mathbb{P}^n_{++}$ be the manifold of symmetric positive definite matrices.
+In this section we present a performance of Algorithm 1 in the search for critical points of an academic function. We compared the performance of the proposed algorithm with the well-known BFGS, [xx] and Trust Region, [xx]. These algorithms were executed using the Matlab Tool Box Manopt,[xx].
 
-\begin{problem}Find $P^* \in \mathbb{P}^n_{++}$, such that $\grad f(P^*) =0$, where $f:\mathbb{P}^n_{++} \to \mathbb{R}$ is given by 
-\begin{equation} \label{pr:academicfunction}
-f(X) = a \log(\det X) + b \trace (X^{-1}),
-\end{equation}
-with $a,b > 0$, $\det P$ is the determinant of $P$,   and $\grad f(P)$ is the riemannian gradient of $f$.
+ To present the problem, we need consider  $ \mathbb{P}^n_{++}$, the manifold of symmetric positive definite matrices of order $n$,
+
+\begin{problem}Find $P^* \in \mathbb{P}^n_{++}$, such that $\grad f(P^*) =0$, where $f:\mathbb{P}^n_{++} \to \mathbb{R}$ is given by  $f(X) = a \log(\det X) + b \trace (X^{-1})$, with $a,b > 0$, $\det P$ is the determinant of $P$,   and $\grad f(P)$ is the riemannian gradient of $f$.
 \end{problem}
 
 
