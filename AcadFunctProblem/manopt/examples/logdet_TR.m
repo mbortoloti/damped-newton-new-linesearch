@@ -24,9 +24,9 @@ rng(12345,'twister');
 
 % Dimension definition 
 dimensions = [100,200,300,400,500];
-dimensions = [100];
+% dimensions = [100];
 % Number of initial guesses for each dimension
-nig = 1;
+nig = 10;
 
 for nn = 1 :  size(dimensions,2)
 n = dimensions(nn);
@@ -40,7 +40,7 @@ problem.M = manifold;
 %
 %  objective function
 %
-a = 10.0;
+a = 3.0;
 b = 1.0;
 f = @(X) a * log(det(X)) + b * trace(X^-1);
 problem.cost = f;

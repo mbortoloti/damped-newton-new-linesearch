@@ -1,26 +1,28 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.29)  15 AUG 2022 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.11.16)  17 AUG 2022 15:19
 entering extended mode
-**./ROUND_TWO_New_linesearch_26_07_22.tex
-(ROUND_TWO_New_linesearch_26_07_22.tex
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ROUND_TWO_New_linesearch_26_07_22.tex
+(./ROUND_TWO_New_linesearch_26_07_22.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18>
+L3 programming layer <2021-01-09> xparse <2020-03-03>
 
 LaTeX Warning: File `example.eps' already exists on the system.
                Not generating it from this source.
 
-(D:\PROGRAMFILES\miktex\tex/latex/base\fix-cm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
 
-(D:\PROGRAMFILES\miktex\tex/latex/base\ts1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
-)) (svjour3.cls
+)) (./svjour3.cls
 Document Class: svjour3 2007/05/08 v3.2 
 LaTeX document class for Springer journals
 Class Springer-SVJour3 Info: extra/valid Springer sub-package (-> *.clo) 
 (Springer-SVJour3)           not found in option list of \documentclass
 (Springer-SVJour3)           - autoactivating "global" style.
-(svglov3.clo
+(./svglov3.clo
 File: svglov3.clo 2009/12/18 v3.2 style option for standardised journals
 
 SVJour Class option: svglov3.clo for standardised journals
@@ -41,71 +43,71 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
 \betweenumberspace=\dimen140
 \aftertext=\dimen141
 \headlineindent=\dimen142
-\c@inst=\count179
-\c@auth=\count180
+\c@inst=\count177
+\c@auth=\count178
 \instindent=\dimen143
 \authrun=\box47
 \authorrunning=\toks15
 \titrun=\box48
 \titlerunning=\toks16
 \combirun=\box49
-\c@lastpage=\count181
+\c@lastpage=\count179
 \rubricwidth=\dimen144
-\c@section=\count182
-\c@subsection=\count183
-\c@subsubsection=\count184
-\c@paragraph=\count185
-\c@subparagraph=\count186
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
 \spthmsep=\dimen145
-\c@theorem=\count187
-\c@case=\count188
-\c@conjecture=\count189
-\c@corollary=\count190
-\c@definition=\count191
-\c@example=\count192
-\c@exercise=\count193
-\c@lemma=\count194
-\c@note=\count195
-\c@problem=\count196
-\c@property=\count197
-\c@proposition=\count198
-\c@question=\count199
-\c@solution=\count266
-\c@remark=\count267
-\c@figure=\count268
-\c@table=\count269
+\c@theorem=\count185
+\c@case=\count186
+\c@conjecture=\count187
+\c@corollary=\count188
+\c@definition=\count189
+\c@example=\count190
+\c@exercise=\count191
+\c@lemma=\count192
+\c@note=\count193
+\c@problem=\count194
+\c@property=\count195
+\c@proposition=\count196
+\c@question=\count197
+\c@solution=\count198
+\c@remark=\count199
+\c@figure=\count266
+\c@table=\count267
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \figcapgap=\dimen146
 \tabcapgap=\dimen147
 \figgap=\dimen148
 \bibindent=\dimen149
-\@tempcntc=\count270
-) (D:\PROGRAMFILES\miktex\tex/latex/graphics\graphicx.sty
+\@tempcntc=\count268
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
-(D:\PROGRAMFILES\miktex\tex/latex/graphics\keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(D:\PROGRAMFILES\miktex\tex/latex/graphics\graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 
-(D:\PROGRAMFILES\miktex\tex/latex/graphics\trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(D:\PROGRAMFILES\miktex\tex/latex/graphics-cfg\graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(D:\PROGRAMFILES\miktex\tex/latex/graphics-def\pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen150
 \Gin@req@width=\dimen151
 )
-(D:\PROGRAMFILES\miktex\tex/latex/amsfonts\amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
@@ -114,36 +116,36 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(D:\PROGRAMFILES\miktex\tex/latex/amsfonts\amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(D:\PROGRAMFILES\miktex\tex/latex/amsmath\amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-(D:\PROGRAMFILES\miktex\tex/latex/amsmath\amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(D:\PROGRAMFILES\miktex\tex/latex/amsmath\amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen152
 ))
-(D:\PROGRAMFILES\miktex\tex/latex/amsmath\amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen153
 )
-(D:\PROGRAMFILES\miktex\tex/latex/amsmath\amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count271
+\inf@bad=\count269
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count272
-\leftroot@=\count273
+\uproot@=\count270
+\leftroot@=\count271
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count274
-\DOTSCASE@=\count275
+\classnum@=\count272
+\DOTSCASE@=\count273
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -152,15 +154,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen154
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count276
-\c@MaxMatrixCols=\count277
+\macc@depth=\count274
+\c@MaxMatrixCols=\count275
 \dotsspace@=\muskip16
-\c@parentequation=\count278
-\dspbrk@lvl=\count279
+\c@parentequation=\count276
+\dspbrk@lvl=\count277
 \tag@help=\toks20
-\row@=\count280
-\column@=\count281
-\maxfields@=\count282
+\row@=\count278
+\column@=\count279
+\maxfields@=\count280
 \andhelp@=\toks21
 \eqnshift@=\dimen155
 \alignsep@=\dimen156
@@ -175,23 +177,23 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
-(D:\PROGRAMFILES\miktex\tex/latex/algorithm2e\algorithm2e.sty
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count283
+\c@AlgoLine=\count281
 
-(D:\PROGRAMFILES\miktex\tex/latex/base\ifthen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \algocf@hangindent=\skip52
 
-(D:\PROGRAMFILES\miktex\tex/latex/ifoddpage\ifoddpage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count284
+\c@checkoddpage=\count282
 )
-(D:\PROGRAMFILES\miktex\tex/latex/latex-tools\xspace.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(D:\PROGRAMFILES\miktex\tex/latex/relsize\relsize.sty
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 \skiptotal=\skip53
@@ -224,18 +226,18 @@ Package: relsize 2013/03/29 ver 4.1
 \algoheightrule=\skip68
 \algotitleheightruledefault=\skip69
 \algotitleheightrule=\skip70
-\c@algocfline=\count285
-\c@algocfproc=\count286
-\c@algocf=\count287
+\c@algocfline=\count283
+\c@algocfproc=\count284
+\c@algocf=\count285
 \algocf@algoframe=\box58
 \algocf@algobox=\box59
 )
-(D:\PROGRAMFILES\miktex\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count288
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count286
 \l__pdf_internal_box=\box60
 )
-(ROUND_TWO_New_linesearch_26_07_22.aux
+(./ROUND_TWO_New_linesearch_26_07_22.aux
 
 LaTeX Warning: Label `eq:AdTesteNew' multiply defined.
 
@@ -259,39 +261,40 @@ LaTeX Font Info:    ... okay on input line 101.
 
 Unknown journal: specify \journalname{<name of your journal>} in preambel
 
-(D:\PROGRAMFILES\miktex\tex/context/base/mkii\supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count289
+\scratchcounter=\count287
 \scratchdimen=\dimen167
 \scratchbox=\box61
-\nofMPsegments=\count290
-\nofMParguments=\count291
+\nofMPsegments=\count288
+\nofMParguments=\count289
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count292
+\MPscratchCnt=\count290
 \MPscratchDim=\dimen168
-\MPnumerator=\count293
-\makeMPintoPDFobject=\count294
+\MPnumerator=\count291
+\makeMPintoPDFobject=\count292
 \everyMPtoPDFconversion=\toks25
-) (D:\PROGRAMFILES\miktex\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(D:\PROGRAMFILES\miktex\tex/latex/00miktex\epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
 ))
 SVJour3 warning: Missing \journalname
 LaTeX Font Info:    Trying to load font information for U+msa on input line 134
 .
-(D:\PROGRAMFILES\miktex\tex/latex/amsfonts\umsa.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 134
 .
 
-(D:\PROGRAMFILES\miktex\tex/latex/amsfonts\umsb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{C:/Users/mbort/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
@@ -305,7 +308,7 @@ Underfull \vbox (badness 4621) has occurred while \output is active []
 
  [5]
 [6]
-<jointdiag.png, id=38, 401.3394pt x 283.2984pt>
+<jointdiag.png, id=39, 401.3394pt x 283.2984pt>
 File: jointdiag.png Graphic file (type png)
 <use jointdiag.png>
 Package pdftex.def Info: jointdiag.png  used on input line 368.
@@ -315,7 +318,7 @@ Package pdftex.def Info: jointdiag.png  used on input line 368.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7]
-<nonconservative.png, id=43, 401.3394pt x 283.2984pt>
+<nonconservative.png, id=44, 401.3394pt x 283.2984pt>
 File: nonconservative.png Graphic file (type png)
 <use nonconservative.png>
 Package pdftex.def Info: nonconservative.png  used on input line 391.
@@ -324,16 +327,19 @@ Package pdftex.def Info: nonconservative.png  used on input line 391.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 <./jointdiag.png (PNG copy)> <./nonconservative.png (PNG copy)>]
-<logdetpp.png, id=48, 470.50781pt x 322.95656pt>
+<logdetpp.png, id=49, 444.91219pt x 314.67563pt>
 File: logdetpp.png Graphic file (type png)
 <use logdetpp.png>
 Package pdftex.def Info: logdetpp.png  used on input line 414.
-(pdftex.def)             Requested size: 235.25333pt x 161.47787pt.
-<logdet_iter.png, id=49, 470.50781pt x 390.70969pt>
+(pdftex.def)             Requested size: 222.45554pt x 157.33742pt.
+<logdet_iter.png, id=50, 470.50781pt x 390.70969pt>
 File: logdet_iter.png Graphic file (type png)
 <use logdet_iter.png>
 Package pdftex.def Info: logdet_iter.png  used on input line 422.
 (pdftex.def)             Requested size: 202.80206pt x 168.40729pt.
+
+Underfull \vbox (badness 1371) has occurred while \output is active []
+
  [9 <./logdetpp.png (PNG copy)>]
 Underfull \hbox (badness 1331) in paragraph at lines 563--569
 []\OT1/cmr/m/n/8 do Carmo, M.P.: Rie-man-nian ge-om-e-try.  Math-e-mat-ics: The
@@ -370,41 +376,44 @@ Underfull \hbox (badness 1412) in paragraph at lines 616--621
 7).  DOI 10.1080/02331934.2017.1359592.  URL
  []
 
-[11] (ROUND_TWO_New_linesearch_26_07_22.aux)
+[11] (./ROUND_TWO_New_linesearch_26_07_22.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3905 strings out of 479321
- 56472 string characters out of 2867011
- 367061 words of memory out of 3000000
- 21329 multiletter control sequences out of 15000+600000
+ 3929 strings out of 479304
+ 56939 string characters out of 5869778
+ 356456 words of memory out of 5000000
+ 21082 multiletter control sequences out of 15000+600000
  412598 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,9n,74p,992b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
-<D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/PROGRA
-MFILES/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/PROGRAMFILES/miktex
-/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/PROGRAMFILES/miktex/fonts/type1/
-public/amsfonts/cm/cmbx7.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfont
-s/cm/cmbx8.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmex10.pf
-b><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/PROGRAM
-FILES/miktex/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/PROGRAMFILES/miktex/f
-onts/type1/public/amsfonts/cm/cmmi7.pfb><D:/PROGRAMFILES/miktex/fonts/type1/pub
-lic/amsfonts/cm/cmmi8.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:
-/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/PROGRAMFILES/m
-iktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/PROGRAMFILES/miktex/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/ams
-fonts/cm/cmsy5.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmsy7
-.pfb><D:/PROGRAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/PROG
-RAMFILES/miktex/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/PROGRAMFILES/mikte
-x/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/PROGRAMFILES/miktex/fonts/
-type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on ROUND_TWO_New_linesearch_26_07_22.pdf (11 pages, 408594 bytes
+ 68i,9n,74p,990b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/symbols/msbm7.pfb>
+Output written on ROUND_TWO_New_linesearch_26_07_22.pdf (11 pages, 381481 bytes
 ).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

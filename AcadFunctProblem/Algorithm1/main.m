@@ -27,9 +27,9 @@ rng(12345,'twister');
 
 % Dimension definition 
 dimensions = [100,200,300,400,500];
-dimensions = [100];
+% dimensions = [100];
 % Number of initial guesses for each dimension
-nig = 1;
+nig = 10;
 
 for nn = 1 :  size(dimensions,2)
 n = dimensions(nn);
@@ -47,7 +47,7 @@ theta = 0.9;
 % typeretra == 2 Analogous Exponential map
 % typeretra == 3 Second order approximarion for exponential map
 % typeretra == 4 First order approximarion for exponential map
-typeretra = 4;
+typeretra = 2;
 
 for q = 1 : nig
 
@@ -77,7 +77,7 @@ options.ngtol = 1.0e-6;
 options.eps2 = 1.0e-16;
  
  
-options.a = 10.0;
+options.a = 3.0;
 options.b = 1.0;
 
         
