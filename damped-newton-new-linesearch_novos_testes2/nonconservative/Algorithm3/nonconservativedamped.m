@@ -22,6 +22,7 @@ function   [info] = nonconservativedamped(p,options)
     %     options.ngtol   ::: gradient norm tolerance
     %     p               ::: initial guess
     %
+    theta = 0.9999;
     iecho = options.iecho;
     sigma = 1.e-3;
     eps2 = 1.0E-08;
@@ -60,7 +61,7 @@ function   [info] = nonconservativedamped(p,options)
         end
             
         fprintf('%6d %23.12e %+18.12e %7s  %9d\n',k,ng,alpha,DIR,ef);
-        fprintf(iecho,'%6d %23.12e %+18.12e %7s  %9d\n',k,ng,alpha,DIR,ef);
+        fprintf(iecho,'%6d,%23.12e,%+18.12e,%7s,%9d\n',k,ng,alpha,DIR,ef);
         if ng <= eps1 
             info.time = toc;
             info.p = p;
@@ -89,6 +90,10 @@ function   [info] = nonconservativedamped(p,options)
             DIR = 'new';
             % Newton equation solution
             v = Ka\ba;
+            if Gphip'*v + theta * norm(Gphip)*norm(v) > 0
+                DIR = 'grd';
+                v = -Gphip;
+            end
         else     
             DIR = 'grd';
             v = -Gphip;

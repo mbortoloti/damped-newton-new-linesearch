@@ -12,6 +12,7 @@ options.ngtol = 1.0e-6;
 
 % Dimension definition
 dim = [500];
+rng(12345,'twister');
 
 itime = fopen("nlstime.dat","w");
 ieft  = fopen("nlsift.dat","w");

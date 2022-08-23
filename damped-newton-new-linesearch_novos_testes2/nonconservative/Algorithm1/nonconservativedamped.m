@@ -62,7 +62,7 @@ function   [info] = nonconservativedamped(p,options)
         end
             
         fprintf('%6d %23.12e %+18.12e %7s  %9d\n',k,ng,alpha,DIR,ef);
-        fprintf(iecho,'%6d %23.12e %+18.12e %7s  %9d\n',k,ng,alpha,DIR,ef);
+        fprintf(iecho,'%6d,%23.12e,%+18.12e,%7s,%9d\n',k,ng,alpha,DIR,ef);
         if ng <= eps1 
             info.time = toc;
             info.p = p;

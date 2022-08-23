@@ -34,7 +34,7 @@ Y0 = qf(Yex+rho*rand(n,p));
 
 options.maxiter = 10000;                 % Maximum of iterations
 options.tol = 1.e-12;                    % Tolerance for norm of gradient function
-options.sttol = 1.e-15;                  % Tolerance for tangent space test for solution of Newton's equation
+options.sttol = 1.e-12;                  % Tolerance for tangent space test for solution of Newton's equation
 options.sigma = 1.e-3;                   % Parameter for linesearch
 options.etask = etask;                   % print echo file 
 options.iecho = fopen("echo.dat","w");   %Echo file

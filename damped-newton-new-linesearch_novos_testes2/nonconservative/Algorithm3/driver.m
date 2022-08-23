@@ -17,8 +17,9 @@ itime = fopen("atime.dat","w");
 ieft  = fopen("aift.dat","w");
 iecho = fopen("echo.log","w");
 options.iecho = iecho;
+
 % Define seed for rand
-rng(5000);
+rng(12345,'twister');
 
 for n = dim
 
