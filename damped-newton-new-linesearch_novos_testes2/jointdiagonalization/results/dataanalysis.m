@@ -17,7 +17,7 @@ set(h,'LineWidth',2);
 
 for i = 1 : size(A3,1)
     if i <= size(A1,1)
-    fprintf("$%5d$ & $%15.10e$ & $%5d$  & NLS & $%15.10e $ &   $%5d$ \\\\ \n",A3.iter(i),A3.gradnorm(i),A3.evalf(i),A1.gradnorm(i),A1.evalf(i));
+    fprintf("$%5d$ & $%15.10e$ & $%5d$  & NLS & $%15.10e $ &   $%5d$ \\\\ \n",A3.iter(i),A1.gradnorm(i),A1.evalf(i),A3.gradnorm(i),A3.evalf(i));
     else
     fprintf("$%5d$ &                    &          & NLS & $%15.10e $ &   $%5d$\\\\ \n",A3.iter(i),A3.gradnorm(i),A3.evalf(i)); 
     end
