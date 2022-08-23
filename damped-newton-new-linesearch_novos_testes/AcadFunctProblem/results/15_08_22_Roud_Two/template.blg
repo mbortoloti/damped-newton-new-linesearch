@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7400 64-bit)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: template.aux
+The style file: spmpsci.bst
+Database file #1: biblioGlobal.bib
+Warning--I didn't find a database entry for "RefB"
+Warning--I didn't find a database entry for "RefJ"
+You've used 15 entries,
+            2945 wiz_defined-function locations,
+            736 strings with 7902 characters,
+and the built_in function-call counts, 6739 in all, are:
+= -- 565
+> -- 160
+< -- 4
++ -- 69
+- -- 52
+* -- 407
+:= -- 910
+add.period$ -- 39
+call.type$ -- 15
+change.case$ -- 70
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 599
+empty$ -- 665
+format.name$ -- 58
+if$ -- 1450
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 141
+newline$ -- 90
+num.names$ -- 30
+pop$ -- 210
+preamble$ -- 1
+purify$ -- 56
+quote$ -- 0
+skip$ -- 146
+stack$ -- 0
+substring$ -- 339
+swap$ -- 322
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 46
+warning$ -- 0
+while$ -- 46
+width$ -- 17
+write$ -- 198
+(There were 2 warnings)
