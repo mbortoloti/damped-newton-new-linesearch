@@ -89,6 +89,11 @@ for k = nalg+1 : nargin
     leg{k-nalg} = varargin{1,k};
 end
 %axis([0 0.72 0.2 1]);
+%set xlabel("CPU time ratio");
+set(gca,'FontSize',12);
+xlabel('CPU time ratio');
+ylabel('Problems solved (%)');
 legend(leg,'Location','SOUTHEAST');
 saveas(gcf,'newtonxdampedall.png')
+
 end
