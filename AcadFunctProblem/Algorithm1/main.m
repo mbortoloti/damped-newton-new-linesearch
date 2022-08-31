@@ -21,7 +21,7 @@ n = 5;
 fprintf("n = %5d\n",n);
 
 % linesearch parameter setting
-theta = 0.9;
+theta = 0.1;
 
 % Definition of Retraction 
 %
@@ -32,7 +32,7 @@ theta = 0.9;
 % typeretra == 2 Analogous Exponential map
 % typeretra == 3 Second order approximarion for exponential map
 % typeretra == 4 First order approximarion for exponential map
-typeretra = 2;
+typeretra = 1;
 
 
 % Initial guess for testing algorithm 1

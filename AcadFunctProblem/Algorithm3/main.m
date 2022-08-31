@@ -14,27 +14,9 @@
 clear all;
 clc;
 
-%
-% Files for performance analysis
-%
-itime = fopen("time.dat","w");
-iiter = fopen("iterates.dat","w");
-ieval = fopen("feval.dat","w");
 
-
-%
-% Static random numbers (only for tests)
-%
-rng(12345,'twister');
-
-% Dimension definition 
- dimensions = [100,200,300,400,500];
-%  dimensions=[100];
-% Number of initial guesses for each dimension
-nig = 10;
-
-for nn = 1 :  size(dimensions,2)
-n = dimensions(nn);
+% Dimension setting
+n = 5;
 fprintf("n = %5d\n",n);
 
 % linesearch parameter setting
@@ -51,27 +33,27 @@ theta = 0.1;
 % typeretra == 4 First order approximarion for exponential map
 typeretra = 1;
 
-for q = 1 : nig
 
-% Initial guess definition
-%P = full(sprandsym(n,0.7,0.1,1));
-P = rand(n,n);
-P = 0.5 * (P + P') + n * eye(n);
+% Initial guess for testing algorithm 1
+density = rand(1);
+rc = rand(1);
+P = sprandsym(n,density,rc,1);
+P= full(P);
 
 
-options.maxiter = 1000;
+options.maxiter = 2000;
 options.stpmin = 1.e-10;
 options.ngtol = 1.0e-6;
 options.eps2 = 1.0e-16;
  
  
-options.a = 1.0;
+options.a = 3.0;
 options.b = 1.0;
 
         
 I = eye(n);
         
-% Riemannian gradient of f1 at P
+% Riemannian gradient of f at P
 a = options.a;
 b = options.b;
 rgradf = @(P) a*P-b*I;
@@ -98,26 +80,6 @@ options.metric = metric;
  
 % Solver call 
 [P,info] = algorithm3(P,options,theta);
-
-if info.error > 0
-    fprintf(itime,"%20s\n","INF");
-    fprintf(iiter,"%10s\n","INF");
-    fprintf(ieval,"%10s\n","INF");
-else
-    fprintf(itime,"%20.15f\n",info.time);
-    fprintf(iiter,"%10d\n",info.iter);
-    fprintf(ieval,"%10d\n",info.evalf);
-end
-
-% end of initial guess loop
-end
-
-%end of dimensions loop
-end
-
-fclose(itime);
-fclose(iiter);
-fclose(ieval);
 
 %
 % Retractions
