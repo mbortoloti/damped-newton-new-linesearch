@@ -1,9 +1,12 @@
 # Damped Newton method with a new linesearch
 
+## This is part of the manuscript "A modified Armijo for damping a Riemannian Newton-type method"
+
+
 Developed by M. A. A. Bortoloti and T. A. Fernades
 
 
-This is about the codes used in numerical simulations in [1]. We use these codes for solving two problems: a joint diagonalization problem and a problem of finding a zero of a non-conservative vector field. Please find "jointdiagonalizaztion" and "nonconservative" folders for access the Matlab codes. 
+This is about the codes used in numerical simulations in [1]. We use these codes for solving two problems: a joint diagonalization problem and a problem of finding a zero of a non-conservative vector field. Please find "jointdiagonalization", "AcadFunctProblem" and "nonconservative" folders for access the Matlab codes. 
 
 In [1] we present simulations of Algorithm 1 (Damped Newton with a new linesearch) and Algorithm 3 (Damped Newton method given in [2]).
 
