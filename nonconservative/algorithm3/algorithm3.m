@@ -23,7 +23,7 @@ function   [info] = algorithm3(p,options)
     %     options.ngtol   ::: gradient norm tolerance
     %     p               ::: initial guess
     %
-    iecho = options.iecho;
+%     iecho = options.iecho;
     sigma = 1.e-3;
     eps2 = 1.0E-08;
     eps1 = options.ngtol;
@@ -46,13 +46,13 @@ function   [info] = algorithm3(p,options)
     info.eft = 0;
     info.error = 0;
     fprintf('  Iterate     Gradient norm        Step length      Direction    F. eval.\n');
-    fprintf(iecho,'  Iterate     Gradient norm        Step length      Direction    F. eval.\n');
+%     fprintf(iecho,'  Iterate     Gradient norm        Step length      Direction    F. eval.\n');
     % Iterate loop
     tic;
     while true
         if k > kMAX
             fprintf(' ::: Maximum iterate number achieved.\n');
-            fprintf(iecho,' ::: Maximum iterate number achieved.\n');
+%             fprintf(iecho,' ::: Maximum iterate number achieved.\n');
             info.iter = k;
             info.time = toc;
             info.p = p;
@@ -62,16 +62,16 @@ function   [info] = algorithm3(p,options)
         end
             
         fprintf('%6d %23.12e %+18.12e %7s  %9d\n',k,ng,alpha,DIR,ef);
-        fprintf(iecho,'%6d %23.12e %+18.12e %7s  %9d\n',k,ng,alpha,DIR,ef);
+%         fprintf(iecho,'%6d %23.12e %+18.12e %7s  %9d\n',k,ng,alpha,DIR,ef);
         if ng <= eps1 
             info.time = toc;
             info.p = p;
             info.iter = k;
             info.ngradf = ng;
             fprintf('\n ::: Critical point found.\n');
-            fprintf(iecho,'\n ::: Critical point found.\n');
+%             fprintf(iecho,'\n ::: Critical point found.\n');
             fprintf(' ::: Evaluate Time %12.5f\n',info.time);
-            fprintf(iecho,' ::: Evaluate Time %12.5f\n',info.time);
+%             fprintf(iecho,' ::: Evaluate Time %12.5f\n',info.time);
             break;
         end
         ef = 0;
