@@ -10,7 +10,7 @@ This is about the codes used in numerical simulations in [1]. We use these codes
 
 In [1] we present simulations of Algorithm 1 (Damped Newton with a new linesearch) and Algorithm 3 (Damped Newton method given in [2]).
 
-Both codes can be started from Matlab file "main.m" in each folder problem (jointdiagonalization or nonconservative).
+Both codes can be started from Matlab file "main.m" in each folder problem (jointdiagonalization, AcadFunctProblem or nonconservative).
  
 
 
