@@ -6,7 +6,7 @@
 Developed by M. A. A. Bortoloti and T. A. Fernades
 
 
-This is about the codes used in numerical simulations in [1]. We use these codes for solving two problems: a joint diagonalization problem and a problem of finding a zero of a non-conservative vector field. Please find "jointdiagonalization", "AcadFunctProblem" and "nonconservative" folders for access the Matlab codes. It can be found in each folder a file "main.m" that is the main routine for codes.
+This is about the codes used in numerical simulations in [1]. We use these codes for solving three problems: a joint diagonalization problem, a problem of minimizing a function on symmetric positive definite matrices, and a problem of finding a zero of a non-conservative vector field. Please find "jointdiagonalization", "AcadFunctProblem" and "nonconservative" folders for access the Matlab codes. It can be found in each folder a file "main.m" that is the main routine for codes.
 
 In [1] we present simulations of Algorithm 1 (Damped Newton with a new linesearch) and Algorithm 3 (Damped Newton method given in [2]).
 
